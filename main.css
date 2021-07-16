@@ -69,8 +69,8 @@ header {
 #sign-in {
     background-color: #118ee6;
     color: white;
-    border-radius: 6%;
-    padding: 6px 10px;
+    border-radius: 8%;
+    padding: 7px 10px;
     margin: 10px;
     font-weight: bold;
 }
@@ -83,10 +83,21 @@ header {
     height: 65vh;
 }
 
+#search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-between;
+    border: solid;
+    width: 50%;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: rgb(242, 242, 242);
+    box-shadow: 0 0 5px #9a9a9a;
+}
+
 #search-box {
-    border: none;
-    border-color: white;
-    color: white;
+    width: 80%;
 }
 
 #search-icon {
