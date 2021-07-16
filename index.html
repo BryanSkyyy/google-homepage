@@ -7,35 +7,39 @@
 </head>
 <body>
     <header>
-        <div class="header-div">
-            <p>About</p>
-            <p>Store</p>
+        <div class="header-div" id="header-left">
+            <p class="header-element">About</p>
+            <p class="header-element">Store</p>
         </div>
-        <div class="header-div">
-            <p>Gmail</p>
-            <p>Images</p>
+        <div class="header-div" id="header-right">
+            <p class="header-element">Gmail</p>
+            <p class="header-element">Images</p>
             <span class="material-icons">apps</span>
-            <a href="" id="sign=in">Sign in</a>
+            <a  class="header-element" href="" id="sign-in">Sign in</a>
         </div>
     </header>
     <section id="center-stuff">
-        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <input type="text" name="other">
-        <div id="center-buttons">
-            <button type="button">Google Search</button>
-            <button type="button">I'm Feeling Lucky</button>
+        <img id="logo" class="center-elements" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <div id="search-div" class="center-elements">
+            <span class="material-icons">search</span>
+            <input id="search-box" type="search" name="other">
+            <span class="material-icons">mic</span>
+        </div>
+        <div>
+            <button class="center-buttons" type="button">Google Search</button>
+            <button class="center-buttons" type="button">I'm Feeling Lucky</button>
         </div>
     </section>
     <footer>
-        <div class="footer-div">
-            <a href="">Advertising</a>
-            <a href="">Business</a>
-            <a href="">How Search works</a>
+        <div class="footer-div" id="footer-left">
+            <a class="header-element" href="">Advertising</a>
+            <a class="header-element" href="">Business</a>
+            <a class="header-element" href="">How Search works</a>
         </div>
-        <div class="footer-div">
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
-            <a href="">Settings</a>
+        <div class="footer-div" id="footer-right">
+            <a class="header-element" href="">Privacy</a>
+            <a class="header-element" href="">Terms</a>
+            <a class="header-element" href="">Settings</a>
         </div>
     </footer>
 </body>

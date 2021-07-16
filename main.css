@@ -26,6 +26,8 @@
 html {
     margin: 0;
     padding: 0;
+    font-family: arial,sans-serif;
+    font-size: small;
 }
 
 body {
@@ -46,14 +48,31 @@ header {
     justify-content: space-between;
     position: fixed;
     top: 0;
+    color: #545454;
 }
 
 .header-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 20%;
+    justify-content: space-between;
+}
+
+#header-left {
+    margin-left: 15px;
+}
+
+#header-right {
+    margin-right: 15px;
+}
+
+#sign-in {
+    background-color: #118ee6;
+    color: white;
+    border-radius: 6%;
+    padding: 6px 10px;
+    margin: 10px;
+    font-weight: bold;
 }
 
 #center-stuff {
@@ -61,7 +80,22 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 65vh;
+}
+
+
+
+.center-elements {
+    margin: 10px;
+    padding: 10px 15px;
+}
+
+.center-buttons {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    color: #696969;
+    border-radius: 6%;
 }
 
 footer {
@@ -74,6 +108,9 @@ footer {
     position:fixed;
     bottom: 0;
     height: 40px;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #dedede;
 }
 
 .footer-div {
@@ -83,4 +120,14 @@ footer {
     justify-content: space-around;
 }
 
-/*idk what's happening*/
+#footer-left {
+    margin-left: 15px;
+}
+
+#footer-right {
+    margin-right: 15px;
+}
+
+.header-element {
+    padding: 10px;
+}
