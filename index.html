@@ -3,7 +3,6 @@
     <title>Google Mockup</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
 </head>
 <body>
     <header>
@@ -20,11 +19,11 @@
     </header>
     <section id="center-stuff">
         <img id="logo" class="center-elements" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <div id="search-div" class="center-elements">
-            <span class="material-icons">search</span>
-            <input id="search-box" type="search" name="other">
-            <span class="material-icons">mic</span>
-        </div>
+        <form id="search-form" class="center-elements">
+            <label for="search-box" id="search-icon"><span class="material-icons">search</span></label>
+            <input type="search" id="search-box" name="search-box">
+            <label for="search-box" id="search-mic"><span class="material-icons">mic</span></label>
+        </form>
         <div>
             <button class="center-buttons" type="button">Google Search</button>
             <button class="center-buttons" type="button">I'm Feeling Lucky</button>

@@ -83,7 +83,15 @@ header {
     height: 65vh;
 }
 
+#search-box {
+    border: none;
+    border-color: white;
+    color: white;
+}
 
+#search-icon {
+    margin-left: 20px;
+}
 
 .center-elements {
     margin: 10px;
