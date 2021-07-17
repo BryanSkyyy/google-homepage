@@ -23,6 +23,16 @@
     font-feature-settings: 'liga';
 }
 
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 html {
     margin: 0;
     padding: 0;
@@ -75,6 +85,10 @@ header {
     font-weight: bold;
 }
 
+#apps:hover {
+    cursor: pointer;
+}
+
 #center-stuff {
     display: flex;
     flex-direction: column;
@@ -90,33 +104,47 @@ header {
     justify-items: space-between;
     border: solid;
     width: 450px;
+    height: 24px;
     border-radius: 30px;
     border-width: 1px;
     border-color: rgb(230, 230, 230);
 }
 
 #search-form:hover {
-    box-shadow: 0 0.5px 2px #9a9a9a;
+    box-shadow: 0 0.5px 6px -2px #9a9a9a;
+}
+
+#search-form:focus-within {
+    box-shadow: 0 0.5px 6px -2px #9a9a9a;
 }
 
 #search-box {
     width: 90%;
     height: 100%;
     border: none;
+    font-size: medium;
 }
 
-#seach-box:active {
-    border: none;
+#search-box:focus {
+    outline: none;
 }
 
 #search-icon {
     margin-right: 8px;
     color: #a9a9a9;
+    font-size: 2px;
 }
 
 #search-voice {
     margin-left: 8px;
-    color: cyan;
+}
+
+#voice-img {
+    width: 24px;
+}
+
+#voice-img:hover {
+    cursor: pointer;
 }
 
 .center-elements {
@@ -172,5 +200,10 @@ footer {
 }
 
 .header-element {
+    padding: 10px;
+    color: #545454;
+}
+
+.footer-element {
     padding: 10px;
 }
